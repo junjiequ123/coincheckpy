@@ -3,8 +3,10 @@ import hmac
 import hashlib
 import requests
 import json
-from coincheck.utils import make_header
-import simplejson as json
+from utils import make_header
+import settings
+
+#import simplejson as sjson
 
 """
 document: https://coincheck.com/documents/exchange/api
@@ -43,7 +45,7 @@ class Account(object):
     
 if __name__ == '__main__':
     pass
-    #a = Account(access_key=settings.access_key, secret_key=settings.secret_key)
-    #print(a.get_balance())
+    a = Account(access_key=settings.access_key, secret_key=settings.secret_key)
+    print(a.get_balance())
     #b = Account(access_key=settings.access_key, secret_key=settings.secret_key)
     #print(b.get_balance())
