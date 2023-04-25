@@ -3,8 +3,8 @@ import hmac
 import hashlib
 import requests
 import json
-from utils import make_header
-import settings
+from coincheck.utils import make_header
+from coincheck import settings
 
 #import simplejson as sjson
 

@@ -26,5 +26,7 @@ def make_header(url,
        'ACCESS-NONCE'    : nonce,
        'ACCESS-SIGNATURE': signature
     }
+    print ("completed header : ")
+    print (headers)
     return headers
 
