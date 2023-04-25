@@ -1,6 +1,7 @@
 import sys,os
 current_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(current_dir)
+print (sys.path)
 
 from coincheck.account import Account
 from coincheck import settings
@@ -15,5 +16,5 @@ def test_get_balance():
 
 
 if __name__ == '__main__':
-    test_get_info()
-    test_get_balance()
+    print(test_get_info())
+    print(test_get_balance())
