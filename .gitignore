@@ -19,3 +19,4 @@ coincheck.egg-info/
 *.egg
 env/
 dist
+setting.py
